@@ -1,0 +1,1 @@
+kubectl rollout undo deployment prometheusconfig  --to-revision=<version> -n <namespace>

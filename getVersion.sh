@@ -1,0 +1,1 @@
+kubectl rollout history deploy/prometheusconfig -n <namespace> | grep -v "deployment" | grep -v "REVISION" | awk '{print $1}' > version.csv
